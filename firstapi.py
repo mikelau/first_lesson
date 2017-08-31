@@ -3,7 +3,7 @@ import requests
 anyname = 'https://jsonplaceholder.typicode.com'
 
 def get_post(number):
-   r = requests.get(anyname+ " /posts/{}".format(number))
+   r = requests.get(anyname+ "/posts/{}".format(number))
    return r.json()
 
 def main():
